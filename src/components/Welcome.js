@@ -1,15 +1,12 @@
 import React from "react";
 import GoogleSignIn from "../img/btn_google_signin_dark_pressed_web.png";
-import {auth, provider} from "../firebase";
-import {signInWithPopup} from "firebase/auth"
+import { auth } from "../firebase";
+import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 
 const Welcome = () => {
-
     const googleSignIn = () => {
-        signInWithPopup(auth, provider)
-        // setLoading(true)
-        // const provider = new GoogleAuthProvider();
-        // signInWithRedirect(auth, provider).then(r => setLoading(false));
+        const provider = new GoogleAuthProvider();
+        signInWithPopup(auth, provider);
     };
 
     return (
