@@ -8,7 +8,6 @@
 
 html,
 body {
-    max-width: 100vw;
     font-size: 16px;
     font-family: sans-serif;
     background-color: black;
@@ -21,13 +20,25 @@ input {
 
 .App {
     width: 100%;
-    min-height: 100vh;
+    min-height: 91.8vh;
     background-color: #1c2c4c;
     color: #4c768d;
 }
 
 /* navbar */
 .nav-bar {
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to top, #fff000 0%, #6269ff 100%);
+    /*background: radial-gradient(#fc666b, #7857d0, #3f5efb);*/
+    /*color: #242443;*/
+    height: 60px;
+    color: white;
+}
+
+.nav-bar2{
     padding: 10px 30px;
     display: flex;
     align-items: center;
@@ -163,7 +174,7 @@ input {
 
 @media only screen and (min-width: 992px) {
     .App {
-        width: 70%;
+        width: 60%;
         background-color: #1c2c4c;
         color: #4c768d;
         margin: 0 auto;
@@ -172,7 +183,7 @@ input {
     .send-message {
         position: fixed;
         bottom: 0;
-        width: 70%;
+        width: 60%;
         padding: 20px 30px;
         background-color: #4c768d;
         display: flex;
@@ -181,7 +192,7 @@ input {
 
 @media only screen and (min-width: 1200px) {
     .App {
-        width: 70%;
+        width: 60%;
         background-color: #1c2c4c;
         color: #4c768d;
         margin: 0 auto;
@@ -190,7 +201,7 @@ input {
     .send-message {
         position: fixed;
         bottom: 0;
-        width: 70%;
+        width: 60%;
         padding: 20px 30px;
         background-color: #4c768d;
         display: flex;
